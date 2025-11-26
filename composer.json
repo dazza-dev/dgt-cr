@@ -1,0 +1,42 @@
+{
+  "name": "dazza-dev/dgt-cr",
+  "description": "Paquete para generar, firmar y enviar documentos electrónicos (Factura, Nota crédito, Nota débito y Tiquete Electrónico) al Ministerio de Hacienda (Costa Rica).",
+  "keywords": [
+    "dgt",
+    "signer",
+    "firma",
+    "firmar xml",
+    "factura electrónica",
+    "costa rica"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "dazza-dev/dgt-cr-sender": "^1.0",
+    "dazza-dev/dgt-cr-signer": "^1.0",
+    "dazza-dev/dgt-xml-generator": "^1.0"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Andres Daza",
+      "email": "adaza90@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "DazzaDev\\DgtCr\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DazzaDev\\DgtCr\\Tests\\": "tests/"
+    }
+  }
+}
